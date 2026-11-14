@@ -1,12 +1,17 @@
-# Did It Really Forget? Spatial residual-influence auditing of corrective unlearning
+# Does the fix hold? Prompt-conditional corrective unlearning in Medical SAM3
 
-Research code for auditing whether corrective unlearning in a promptable segmentation model
-(SAM ViT-B on Kvasir-SEG) removes the influence of deliberately corrupted masks, and
-whether a spatial internal audit predicts re-emergence under prompt perturbation and fine-tuning.
+Research code for assignment card A ("Does promptable medical segmentation transfer across
+modalities?", base paper Medical SAM3, arXiv:2601.10880), with a corrective-unlearning twist.
+After unlearning corrupted masks in Medical SAM3 fine-tuned on held-out ultrasound and dermoscopy
+data, does the fix hold across prompt types (text, box, point) and modalities? And does a
+pixel-level internal audit predict where errors re-emerge?
+
+The layout and power files in `design/` still describe design v1 (SAM ViT-B on Kvasir-SEG) and
+are due to be regenerated; see `design/DESIGN.md` Sec. 10.
 
 | Path | Contents |
 |---|---|
-| `design/DESIGN.md` | Study design: conditions, partitions, audit controls, recovery arms, pre-specified analysis |
+| `design/DESIGN.md` | Study design v2 (Medical SAM3, held-out ultrasound and dermoscopy, prompt-conditional unlearning) |
 | `design/make_layout.py` | Seeded run manifest (`runs.csv`), prompt grid, fine-tuning checkpoints |
 | `design/power_sim*.py` | Simulation-based power analysis behind the seed count |
 | `src/dedup.py` | Near-duplicate grouping (perceptual hash + shift-tolerant SSIM) |
