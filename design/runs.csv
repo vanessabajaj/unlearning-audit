@@ -1,274 +1,400 @@
-seed,split,model_id,condition,method,flag_frac,parent,trains_from_scratch,train_data,flag_draw,tier,exec_order
-1,confirmatory,s1_oracle,oracle,,,,True,train images minus ALL corrupted,,1,1
-0,dev,s0_RmF_f025_d1,unlearned,RmF,0.25,,True,train images minus flagged subset,1.0,1,2
-6,confirmatory,s6_clean,clean,,,,True,"all train images, original masks",,1,3
-5,confirmatory,s5_corrupt,corrupted,,,,True,"all train images, 40% with ring",,1,4
-6,confirmatory,s6_RmF_f050_d1,unlearned,RmF,0.5,,True,train images minus flagged subset,1.0,1,5
-1,confirmatory,s1_RmF_f010_d1,unlearned,RmF,0.1,,True,train images minus flagged subset,1.0,1,6
-6,confirmatory,s6_oracle,oracle,,,,True,train images minus ALL corrupted,,1,7
-3,confirmatory,s3_RmF_f050_d1,unlearned,RmF,0.5,,True,train images minus flagged subset,1.0,1,8
-5,confirmatory,s5_RmF_f010_d1,unlearned,RmF,0.1,,True,train images minus flagged subset,1.0,1,9
-3,confirmatory,s3_oracle,oracle,,,,True,train images minus ALL corrupted,,1,10
-1,confirmatory,s1_RmF_f025_d1,unlearned,RmF,0.25,,True,train images minus flagged subset,1.0,1,11
-3,confirmatory,s3_RmF_f025_d1,unlearned,RmF,0.25,,True,train images minus flagged subset,1.0,1,12
-5,confirmatory,s5_RmF_f100_d1,unlearned,RmF,1.0,,True,train images minus flagged subset,1.0,1,13
-5,confirmatory,s5_oracle,oracle,,,,True,train images minus ALL corrupted,,1,14
-1,confirmatory,s1_corrupt,corrupted,,,,True,"all train images, 40% with ring",,1,15
-3,confirmatory,s3_clean,clean,,,,True,"all train images, original masks",,1,16
-2,confirmatory,s2_corrupt,corrupted,,,,True,"all train images, 40% with ring",,1,17
-4,confirmatory,s4_RmF_f025_d1,unlearned,RmF,0.25,,True,train images minus flagged subset,1.0,1,18
-3,confirmatory,s3_RmF_f100_d1,unlearned,RmF,1.0,,True,train images minus flagged subset,1.0,1,19
-5,confirmatory,s5_RmF_f025_d1,unlearned,RmF,0.25,,True,train images minus flagged subset,1.0,1,20
-2,confirmatory,s2_RmF_f050_d1,unlearned,RmF,0.5,,True,train images minus flagged subset,1.0,1,21
-5,confirmatory,s5_clean,clean,,,,True,"all train images, original masks",,1,22
-0,dev,s0_RmF_f100_d1,unlearned,RmF,1.0,,True,train images minus flagged subset,1.0,1,23
-4,confirmatory,s4_RmF_f050_d1,unlearned,RmF,0.5,,True,train images minus flagged subset,1.0,1,24
-0,dev,s0_RmF_f010_d1,unlearned,RmF,0.1,,True,train images minus flagged subset,1.0,1,25
-4,confirmatory,s4_RmF_f010_d1,unlearned,RmF,0.1,,True,train images minus flagged subset,1.0,1,26
-6,confirmatory,s6_RmF_f010_d1,unlearned,RmF,0.1,,True,train images minus flagged subset,1.0,1,27
-0,dev,s0_oracle,oracle,,,,True,train images minus ALL corrupted,,1,28
-2,confirmatory,s2_RmF_f010_d1,unlearned,RmF,0.1,,True,train images minus flagged subset,1.0,1,29
-6,confirmatory,s6_RmF_f025_d1,unlearned,RmF,0.25,,True,train images minus flagged subset,1.0,1,30
-4,confirmatory,s4_corrupt,corrupted,,,,True,"all train images, 40% with ring",,1,31
-0,dev,s0_clean,clean,,,,True,"all train images, original masks",,1,32
-0,dev,s0_corrupt,corrupted,,,,True,"all train images, 40% with ring",,1,33
-5,confirmatory,s5_RmF_f050_d1,unlearned,RmF,0.5,,True,train images minus flagged subset,1.0,1,34
-1,confirmatory,s1_RmF_f100_d1,unlearned,RmF,1.0,,True,train images minus flagged subset,1.0,1,35
-4,confirmatory,s4_clean,clean,,,,True,"all train images, original masks",,1,36
-0,dev,s0_RmF_f050_d1,unlearned,RmF,0.5,,True,train images minus flagged subset,1.0,1,37
-2,confirmatory,s2_oracle,oracle,,,,True,train images minus ALL corrupted,,1,38
-4,confirmatory,s4_oracle,oracle,,,,True,train images minus ALL corrupted,,1,39
-3,confirmatory,s3_corrupt,corrupted,,,,True,"all train images, 40% with ring",,1,40
-1,confirmatory,s1_clean,clean,,,,True,"all train images, original masks",,1,41
-6,confirmatory,s6_corrupt,corrupted,,,,True,"all train images, 40% with ring",,1,42
-2,confirmatory,s2_RmF_f025_d1,unlearned,RmF,0.25,,True,train images minus flagged subset,1.0,1,43
-2,confirmatory,s2_RmF_f100_d1,unlearned,RmF,1.0,,True,train images minus flagged subset,1.0,1,44
-6,confirmatory,s6_RmF_f100_d1,unlearned,RmF,1.0,,True,train images minus flagged subset,1.0,1,45
-3,confirmatory,s3_RmF_f010_d1,unlearned,RmF,0.1,,True,train images minus flagged subset,1.0,1,46
-2,confirmatory,s2_clean,clean,,,,True,"all train images, original masks",,1,47
-1,confirmatory,s1_RmF_f050_d1,unlearned,RmF,0.5,,True,train images minus flagged subset,1.0,1,48
-4,confirmatory,s4_RmF_f100_d1,unlearned,RmF,1.0,,True,train images minus flagged subset,1.0,1,49
-6,confirmatory,s6_SAP_f010_d1,unlearned,SAP,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,1
-1,confirmatory,s1_SSD_f025_d5,unlearned,SSD,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,2
-2,confirmatory,s2_SAP_f025_d5,unlearned,SAP,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,3
-6,confirmatory,s6_SSD_f025_d2,unlearned,SSD,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,4
-6,confirmatory,s6_SAP_f010_d4,unlearned,SAP,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,5
-6,confirmatory,s6_SSD_f050_d1,unlearned,SSD,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,6
-5,confirmatory,s5_SAP_f010_d3,unlearned,SAP,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,7
-5,confirmatory,s5_SSD_f100_d1,unlearned,SSD,1.0,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,8
-6,confirmatory,s6_SAP_f050_d1,unlearned,SAP,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,9
-5,confirmatory,s5_SSD_f025_d5,unlearned,SSD,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,10
-6,confirmatory,s6_SSD_f050_d5,unlearned,SSD,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,11
-2,confirmatory,s2_SSD_f025_d4,unlearned,SSD,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,12
-4,confirmatory,s4_SSD_f010_d5,unlearned,SSD,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,13
-6,confirmatory,s6_SAP_f025_d1,unlearned,SAP,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,14
-5,confirmatory,s5_SSD_f025_d4,unlearned,SSD,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,15
-1,confirmatory,s1_SAP_f010_d4,unlearned,SAP,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,16
-2,confirmatory,s2_SSD_f010_d5,unlearned,SSD,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,17
-6,confirmatory,s6_SSD_f010_d3,unlearned,SSD,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,18
-5,confirmatory,s5_SAP_f010_d4,unlearned,SAP,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,19
-0,dev,s0_SAP_f050_d1,unlearned,SAP,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,20
-1,confirmatory,s1_SAP_f050_d4,unlearned,SAP,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,21
-3,confirmatory,s3_SAP_f025_d2,unlearned,SAP,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,22
-6,confirmatory,s6_SSD_f025_d3,unlearned,SSD,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,23
-4,confirmatory,s4_SSD_f050_d2,unlearned,SSD,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,24
-5,confirmatory,s5_SAP_f050_d5,unlearned,SAP,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,25
-1,confirmatory,s1_SSD_f025_d1,unlearned,SSD,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,26
-6,confirmatory,s6_SAP_f010_d3,unlearned,SAP,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,27
-0,dev,s0_SSD_f050_d1,unlearned,SSD,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,28
-1,confirmatory,s1_SAP_f050_d3,unlearned,SAP,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,29
-2,confirmatory,s2_SAP_f010_d5,unlearned,SAP,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,30
-2,confirmatory,s2_SSD_f010_d2,unlearned,SSD,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,31
-3,confirmatory,s3_SSD_f010_d3,unlearned,SSD,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,32
-5,confirmatory,s5_SSD_f010_d2,unlearned,SSD,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,33
-2,confirmatory,s2_SSD_f050_d1,unlearned,SSD,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,34
-6,confirmatory,s6_SAP_f050_d4,unlearned,SAP,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,35
-6,confirmatory,s6_SAP_f010_d2,unlearned,SAP,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,36
-0,dev,s0_SSD_f010_d2,unlearned,SSD,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,37
-5,confirmatory,s5_SAP_f025_d5,unlearned,SAP,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,38
-6,confirmatory,s6_SSD_f050_d4,unlearned,SSD,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,39
-0,dev,s0_SSD_f025_d1,unlearned,SSD,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,40
-0,dev,s0_SAP_f050_d5,unlearned,SAP,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,41
-6,confirmatory,s6_SSD_f010_d5,unlearned,SSD,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,42
-5,confirmatory,s5_SAP_f025_d4,unlearned,SAP,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,43
-4,confirmatory,s4_SAP_f025_d2,unlearned,SAP,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,44
-6,confirmatory,s6_SAP_f025_d2,unlearned,SAP,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,45
-6,confirmatory,s6_SAP_f025_d4,unlearned,SAP,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,46
-1,confirmatory,s1_SSD_f010_d2,unlearned,SSD,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,47
-5,confirmatory,s5_SSD_f050_d2,unlearned,SSD,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,48
-6,confirmatory,s6_SAP_f050_d2,unlearned,SAP,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,49
-0,dev,s0_SSD_f050_d3,unlearned,SSD,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,50
-2,confirmatory,s2_SSD_f025_d3,unlearned,SSD,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,51
-2,confirmatory,s2_SSD_f100_d1,unlearned,SSD,1.0,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,52
-5,confirmatory,s5_SSD_f025_d3,unlearned,SSD,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,53
-0,dev,s0_SAP_f025_d1,unlearned,SAP,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,54
-5,confirmatory,s5_SAP_f050_d2,unlearned,SAP,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,55
-3,confirmatory,s3_SAP_f010_d1,unlearned,SAP,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,56
-1,confirmatory,s1_SSD_f100_d1,unlearned,SSD,1.0,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,57
-6,confirmatory,s6_SSD_f025_d4,unlearned,SSD,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,58
-2,confirmatory,s2_SAP_f010_d4,unlearned,SAP,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,59
-5,confirmatory,s5_SAP_f100_d1,unlearned,SAP,1.0,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,60
-2,confirmatory,s2_SAP_f050_d4,unlearned,SAP,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,61
-2,confirmatory,s2_SAP_f025_d3,unlearned,SAP,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,62
-3,confirmatory,s3_SAP_f025_d4,unlearned,SAP,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,63
-4,confirmatory,s4_SSD_f050_d3,unlearned,SSD,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,64
-3,confirmatory,s3_SSD_f010_d2,unlearned,SSD,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,65
-2,confirmatory,s2_SSD_f025_d2,unlearned,SSD,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,66
-0,dev,s0_SAP_f025_d2,unlearned,SAP,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,67
-4,confirmatory,s4_SAP_f025_d3,unlearned,SAP,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,68
-5,confirmatory,s5_SAP_f010_d1,unlearned,SAP,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,69
-5,confirmatory,s5_SSD_f010_d3,unlearned,SSD,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,70
-2,confirmatory,s2_SAP_f050_d5,unlearned,SAP,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,71
-0,dev,s0_SAP_f100_d1,unlearned,SAP,1.0,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,72
-3,confirmatory,s3_SSD_f100_d1,unlearned,SSD,1.0,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,73
-4,confirmatory,s4_SAP_f010_d1,unlearned,SAP,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,74
-3,confirmatory,s3_SSD_f025_d1,unlearned,SSD,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,75
-2,confirmatory,s2_SSD_f050_d3,unlearned,SSD,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,76
-0,dev,s0_SAP_f010_d1,unlearned,SAP,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,77
-1,confirmatory,s1_SAP_f025_d2,unlearned,SAP,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,78
-3,confirmatory,s3_SAP_f050_d3,unlearned,SAP,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,79
-2,confirmatory,s2_SSD_f050_d5,unlearned,SSD,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,80
-0,dev,s0_SAP_f025_d3,unlearned,SAP,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,81
-2,confirmatory,s2_SSD_f025_d1,unlearned,SSD,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,82
-1,confirmatory,s1_SSD_f050_d5,unlearned,SSD,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,83
-0,dev,s0_SSD_f050_d2,unlearned,SSD,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,84
-3,confirmatory,s3_SAP_f025_d5,unlearned,SAP,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,85
-4,confirmatory,s4_SSD_f025_d5,unlearned,SSD,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,86
-5,confirmatory,s5_SAP_f050_d4,unlearned,SAP,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,87
-1,confirmatory,s1_SAP_f025_d5,unlearned,SAP,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,88
-4,confirmatory,s4_SSD_f025_d4,unlearned,SSD,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,89
-6,confirmatory,s6_SAP_f010_d5,unlearned,SAP,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,90
-4,confirmatory,s4_SAP_f050_d1,unlearned,SAP,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,91
-6,confirmatory,s6_SAP_f050_d5,unlearned,SAP,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,92
-0,dev,s0_SSD_f010_d3,unlearned,SSD,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,93
-1,confirmatory,s1_SSD_f050_d1,unlearned,SSD,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,94
-0,dev,s0_SSD_f010_d4,unlearned,SSD,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,95
-3,confirmatory,s3_SAP_f010_d4,unlearned,SAP,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,96
-1,confirmatory,s1_SSD_f010_d5,unlearned,SSD,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,97
-4,confirmatory,s4_SAP_f010_d4,unlearned,SAP,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,98
-6,confirmatory,s6_SAP_f050_d3,unlearned,SAP,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,99
-1,confirmatory,s1_SSD_f050_d4,unlearned,SSD,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,100
-5,confirmatory,s5_SAP_f050_d3,unlearned,SAP,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,101
-1,confirmatory,s1_SSD_f025_d2,unlearned,SSD,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,102
-0,dev,s0_SSD_f010_d1,unlearned,SSD,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,103
-1,confirmatory,s1_SAP_f025_d4,unlearned,SAP,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,104
-4,confirmatory,s4_SAP_f025_d5,unlearned,SAP,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,105
-3,confirmatory,s3_SSD_f010_d5,unlearned,SSD,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,106
-0,dev,s0_SAP_f010_d2,unlearned,SAP,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,107
-3,confirmatory,s3_SAP_f025_d1,unlearned,SAP,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,108
-5,confirmatory,s5_SAP_f010_d5,unlearned,SAP,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,109
-6,confirmatory,s6_SSD_f050_d2,unlearned,SSD,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,110
-5,confirmatory,s5_SAP_f050_d1,unlearned,SAP,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,111
-1,confirmatory,s1_SSD_f050_d2,unlearned,SSD,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,112
-1,confirmatory,s1_SSD_f010_d1,unlearned,SSD,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,113
-1,confirmatory,s1_SAP_f100_d1,unlearned,SAP,1.0,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,114
-4,confirmatory,s4_SSD_f050_d4,unlearned,SSD,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,115
-2,confirmatory,s2_SAP_f025_d1,unlearned,SAP,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,116
-2,confirmatory,s2_SSD_f050_d4,unlearned,SSD,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,117
-5,confirmatory,s5_SSD_f010_d1,unlearned,SSD,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,118
-2,confirmatory,s2_SAP_f100_d1,unlearned,SAP,1.0,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,119
-0,dev,s0_SAP_f050_d3,unlearned,SAP,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,120
-6,confirmatory,s6_SSD_f050_d3,unlearned,SSD,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,121
-0,dev,s0_SAP_f025_d4,unlearned,SAP,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,122
-5,confirmatory,s5_SSD_f050_d1,unlearned,SSD,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,123
-5,confirmatory,s5_SSD_f050_d3,unlearned,SSD,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,124
-0,dev,s0_SSD_f025_d3,unlearned,SSD,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,125
-2,confirmatory,s2_SAP_f010_d1,unlearned,SAP,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,126
-4,confirmatory,s4_SSD_f100_d1,unlearned,SSD,1.0,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,127
-2,confirmatory,s2_SAP_f025_d2,unlearned,SAP,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,128
-2,confirmatory,s2_SAP_f010_d3,unlearned,SAP,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,129
-2,confirmatory,s2_SAP_f010_d2,unlearned,SAP,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,130
-4,confirmatory,s4_SAP_f100_d1,unlearned,SAP,1.0,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,131
-4,confirmatory,s4_SAP_f010_d2,unlearned,SAP,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,132
-3,confirmatory,s3_SSD_f050_d3,unlearned,SSD,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,133
-5,confirmatory,s5_SSD_f025_d2,unlearned,SSD,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,134
-4,confirmatory,s4_SAP_f010_d5,unlearned,SAP,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,135
-4,confirmatory,s4_SSD_f010_d3,unlearned,SSD,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,136
-1,confirmatory,s1_SAP_f050_d5,unlearned,SAP,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,137
-6,confirmatory,s6_SSD_f010_d2,unlearned,SSD,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,138
-4,confirmatory,s4_SAP_f010_d3,unlearned,SAP,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,139
-1,confirmatory,s1_SAP_f010_d5,unlearned,SAP,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,140
-5,confirmatory,s5_SSD_f050_d5,unlearned,SSD,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,141
-0,dev,s0_SAP_f010_d5,unlearned,SAP,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,142
-0,dev,s0_SSD_f010_d5,unlearned,SSD,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,143
-6,confirmatory,s6_SAP_f100_d1,unlearned,SAP,1.0,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,144
-5,confirmatory,s5_SAP_f025_d1,unlearned,SAP,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,145
-6,confirmatory,s6_SSD_f010_d1,unlearned,SSD,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,146
-4,confirmatory,s4_SSD_f025_d3,unlearned,SSD,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,147
-0,dev,s0_SAP_f025_d5,unlearned,SAP,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,148
-2,confirmatory,s2_SSD_f010_d1,unlearned,SSD,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,149
-4,confirmatory,s4_SSD_f010_d2,unlearned,SSD,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,150
-4,confirmatory,s4_SSD_f025_d2,unlearned,SSD,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,151
-4,confirmatory,s4_SAP_f025_d1,unlearned,SAP,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,152
-3,confirmatory,s3_SAP_f100_d1,unlearned,SAP,1.0,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,153
-1,confirmatory,s1_SSD_f025_d4,unlearned,SSD,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,154
-0,dev,s0_SAP_f010_d3,unlearned,SAP,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,155
-3,confirmatory,s3_SAP_f010_d3,unlearned,SAP,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,156
-5,confirmatory,s5_SAP_f010_d2,unlearned,SAP,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,157
-4,confirmatory,s4_SSD_f010_d4,unlearned,SSD,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,158
-3,confirmatory,s3_SSD_f050_d4,unlearned,SSD,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,159
-6,confirmatory,s6_SSD_f025_d1,unlearned,SSD,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,160
-0,dev,s0_SAP_f050_d2,unlearned,SAP,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,161
-6,confirmatory,s6_SAP_f025_d3,unlearned,SAP,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,162
-1,confirmatory,s1_SSD_f010_d4,unlearned,SSD,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,163
-3,confirmatory,s3_SAP_f050_d2,unlearned,SAP,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,164
-3,confirmatory,s3_SAP_f050_d1,unlearned,SAP,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,165
-0,dev,s0_SSD_f050_d5,unlearned,SSD,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,166
-2,confirmatory,s2_SSD_f025_d5,unlearned,SSD,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,167
-3,confirmatory,s3_SSD_f025_d5,unlearned,SSD,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,168
-3,confirmatory,s3_SAP_f050_d4,unlearned,SAP,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,169
-3,confirmatory,s3_SAP_f010_d5,unlearned,SAP,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,170
-0,dev,s0_SSD_f050_d4,unlearned,SSD,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,171
-5,confirmatory,s5_SSD_f050_d4,unlearned,SSD,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,172
-2,confirmatory,s2_SSD_f050_d2,unlearned,SSD,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,173
-5,confirmatory,s5_SSD_f025_d1,unlearned,SSD,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,174
-4,confirmatory,s4_SAP_f025_d4,unlearned,SAP,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,175
-3,confirmatory,s3_SSD_f025_d3,unlearned,SSD,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,176
-1,confirmatory,s1_SAP_f025_d3,unlearned,SAP,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,177
-0,dev,s0_SSD_f025_d5,unlearned,SSD,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,178
-3,confirmatory,s3_SSD_f010_d4,unlearned,SSD,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,179
-3,confirmatory,s3_SAP_f010_d2,unlearned,SAP,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,180
-0,dev,s0_SAP_f050_d4,unlearned,SAP,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,181
-2,confirmatory,s2_SSD_f010_d4,unlearned,SSD,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,182
-3,confirmatory,s3_SSD_f025_d2,unlearned,SSD,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,183
-1,confirmatory,s1_SAP_f050_d1,unlearned,SAP,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,184
-3,confirmatory,s3_SSD_f050_d2,unlearned,SSD,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,185
-6,confirmatory,s6_SAP_f025_d5,unlearned,SAP,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,186
-0,dev,s0_SSD_f025_d2,unlearned,SSD,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,187
-6,confirmatory,s6_SSD_f100_d1,unlearned,SSD,1.0,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,188
-3,confirmatory,s3_SAP_f025_d3,unlearned,SAP,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,189
-2,confirmatory,s2_SAP_f050_d2,unlearned,SAP,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,190
-0,dev,s0_SSD_f025_d4,unlearned,SSD,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,191
-1,confirmatory,s1_SSD_f050_d3,unlearned,SSD,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,192
-3,confirmatory,s3_SAP_f050_d5,unlearned,SAP,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,193
-0,dev,s0_SSD_f100_d1,unlearned,SSD,1.0,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,194
-4,confirmatory,s4_SAP_f050_d3,unlearned,SAP,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,195
-6,confirmatory,s6_SSD_f010_d4,unlearned,SSD,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,196
-2,confirmatory,s2_SSD_f010_d3,unlearned,SSD,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,197
-1,confirmatory,s1_SAP_f010_d3,unlearned,SAP,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,198
-1,confirmatory,s1_SSD_f025_d3,unlearned,SSD,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,199
-5,confirmatory,s5_SAP_f025_d3,unlearned,SAP,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,200
-2,confirmatory,s2_SAP_f050_d1,unlearned,SAP,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,201
-3,confirmatory,s3_SSD_f050_d1,unlearned,SSD,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,202
-4,confirmatory,s4_SAP_f050_d5,unlearned,SAP,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,203
-4,confirmatory,s4_SAP_f050_d4,unlearned,SAP,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,204
-1,confirmatory,s1_SSD_f010_d3,unlearned,SSD,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,205
-4,confirmatory,s4_SSD_f050_d1,unlearned,SSD,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,206
-1,confirmatory,s1_SAP_f050_d2,unlearned,SAP,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,207
-4,confirmatory,s4_SAP_f050_d2,unlearned,SAP,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,208
-1,confirmatory,s1_SAP_f010_d2,unlearned,SAP,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,209
-6,confirmatory,s6_SSD_f025_d5,unlearned,SSD,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,210
-3,confirmatory,s3_SSD_f025_d4,unlearned,SSD,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,211
-4,confirmatory,s4_SSD_f025_d1,unlearned,SSD,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,212
-0,dev,s0_SAP_f010_d4,unlearned,SAP,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,213
-5,confirmatory,s5_SAP_f025_d2,unlearned,SAP,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,214
-2,confirmatory,s2_SAP_f050_d3,unlearned,SAP,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,215
-1,confirmatory,s1_SAP_f025_d1,unlearned,SAP,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,216
-1,confirmatory,s1_SAP_f010_d1,unlearned,SAP,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,217
-5,confirmatory,s5_SSD_f010_d5,unlearned,SSD,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,218
-3,confirmatory,s3_SSD_f050_d5,unlearned,SSD,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,219
-5,confirmatory,s5_SSD_f010_d4,unlearned,SSD,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,220
-3,confirmatory,s3_SSD_f010_d1,unlearned,SSD,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,221
-4,confirmatory,s4_SSD_f050_d5,unlearned,SSD,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,222
-2,confirmatory,s2_SAP_f025_d4,unlearned,SAP,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,223
-4,confirmatory,s4_SSD_f010_d1,unlearned,SSD,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,224
+seed,modality,block,split,train_prompt,model_id,condition,method,flag_frac,flag_draw,parent,is_finetune,train_data,tier,exec_order
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,1
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,2
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,3
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,4
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,5
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,6
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,7
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,8
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,9
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,10
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,11
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,12
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,13
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,14
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,15
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,16
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,17
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,18
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,19
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,20
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,21
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,22
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,23
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,24
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,25
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,26
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,27
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,28
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,29
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,30
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,31
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,32
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,33
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,34
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,35
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,36
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,37
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,38
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,39
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,40
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,41
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,42
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,43
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,44
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,45
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,46
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,47
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,48
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,49
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,50
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,51
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,52
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,53
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,54
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,55
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,56
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,57
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,58
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,59
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,60
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,61
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,62
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,63
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,64
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,65
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,66
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,67
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,68
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,69
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,70
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,71
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,72
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,73
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,74
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,75
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,76
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,77
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,78
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,79
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,80
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,81
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,82
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,83
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,84
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,85
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,86
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,87
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,88
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,89
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,90
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,91
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,92
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,93
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,94
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_corrupted,corrupted,,,,Medical SAM3 released 2D checkpoint,True,"train pool, 40% with ring corruption",1,95
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,96
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,97
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_oracle,oracle,,,,Medical SAM3 released 2D checkpoint,True,train pool minus ALL corrupted,1,98
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,99
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,100
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,101
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_clean,clean,,,,Medical SAM3 released 2D checkpoint,True,"train pool, true masks",1,102
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,103
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_RmF_f050_d1,unlearned,RmF,0.5,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,104
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_RmF_f010_d1,unlearned,RmF,0.1,1.0,Medical SAM3 released 2D checkpoint,True,train pool minus flagged subset,1,105
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_SSD_f010_d1,unlearned,SSD,0.1,1.0,s2_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,1
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_SAP_f050_d2,unlearned,SAP,0.5,2.0,s2_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,2
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_SSD_f050_d2,unlearned,SSD,0.5,2.0,s2_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,3
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_SAP_f050_d3,unlearned,SAP,0.5,3.0,s2_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,4
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_SSD_f050_d3,unlearned,SSD,0.5,3.0,s6_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,5
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_SAP_f010_d2,unlearned,SAP,0.1,2.0,s6_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,6
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_SAP_f010_d2,unlearned,SAP,0.1,2.0,s0_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,7
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_SAP_f100_d1,unlearned,SAP,1.0,1.0,s5_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,8
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_SAP_f010_d1,unlearned,SAP,0.1,1.0,s0_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,9
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_SSD_f010_d2,unlearned,SSD,0.1,2.0,s0_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,10
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_SAP_f050_d1,unlearned,SAP,0.5,1.0,s2_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,11
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_SAP_f050_d1,unlearned,SAP,0.5,1.0,s4_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,12
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_SSD_f050_d2,unlearned,SSD,0.5,2.0,s6_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,13
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_SAP_f050_d3,unlearned,SAP,0.5,3.0,s5_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,14
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_SAP_f100_d1,unlearned,SAP,1.0,1.0,s6_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,15
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_SAP_f050_d3,unlearned,SAP,0.5,3.0,s4_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,16
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_SSD_f010_d3,unlearned,SSD,0.1,3.0,s4_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,17
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_SSD_f100_d1,unlearned,SSD,1.0,1.0,s6_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,18
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_SAP_f010_d1,unlearned,SAP,0.1,1.0,s6_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,19
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_SSD_f010_d1,unlearned,SSD,0.1,1.0,s1_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,20
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_SAP_f010_d3,unlearned,SAP,0.1,3.0,s4_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,21
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_SAP_f100_d1,unlearned,SAP,1.0,1.0,s5_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,22
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_SSD_f050_d2,unlearned,SSD,0.5,2.0,s1_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,23
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_SSD_f010_d2,unlearned,SSD,0.1,2.0,s0_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,24
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_SSD_f100_d1,unlearned,SSD,1.0,1.0,s3_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,25
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_SAP_f050_d3,unlearned,SAP,0.5,3.0,s3_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,26
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_SSD_f010_d3,unlearned,SSD,0.1,3.0,s4_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,27
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_SSD_f050_d3,unlearned,SSD,0.5,3.0,s0_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,28
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_SSD_f050_d2,unlearned,SSD,0.5,2.0,s4_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,29
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_SAP_f050_d3,unlearned,SAP,0.5,3.0,s5_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,30
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_SAP_f050_d1,unlearned,SAP,0.5,1.0,s2_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,31
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_SSD_f050_d3,unlearned,SSD,0.5,3.0,s5_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,32
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_SAP_f010_d3,unlearned,SAP,0.1,3.0,s6_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,33
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_SSD_f050_d1,unlearned,SSD,0.5,1.0,s3_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,34
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_SAP_f050_d1,unlearned,SAP,0.5,1.0,s3_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,35
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_SSD_f100_d1,unlearned,SSD,1.0,1.0,s2_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,36
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_SAP_f010_d1,unlearned,SAP,0.1,1.0,s3_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,37
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_SAP_f010_d3,unlearned,SAP,0.1,3.0,s0_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,38
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_SAP_f050_d1,unlearned,SAP,0.5,1.0,s6_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,39
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_SSD_f010_d1,unlearned,SSD,0.1,1.0,s3_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,40
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_SSD_f100_d1,unlearned,SSD,1.0,1.0,s0_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,41
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_SAP_f100_d1,unlearned,SAP,1.0,1.0,s4_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,42
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_SAP_f050_d2,unlearned,SAP,0.5,2.0,s0_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,43
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_SAP_f010_d3,unlearned,SAP,0.1,3.0,s6_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,44
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_SSD_f100_d1,unlearned,SSD,1.0,1.0,s0_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,45
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_SAP_f010_d3,unlearned,SAP,0.1,3.0,s4_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,46
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_SAP_f100_d1,unlearned,SAP,1.0,1.0,s2_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,47
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_SSD_f010_d1,unlearned,SSD,0.1,1.0,s1_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,48
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_SSD_f050_d2,unlearned,SSD,0.5,2.0,s0_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,49
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_SAP_f010_d1,unlearned,SAP,0.1,1.0,s2_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,50
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_SSD_f010_d3,unlearned,SSD,0.1,3.0,s2_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,51
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_SSD_f100_d1,unlearned,SSD,1.0,1.0,s5_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,52
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_SSD_f050_d1,unlearned,SSD,0.5,1.0,s6_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,53
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_SAP_f050_d3,unlearned,SAP,0.5,3.0,s3_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,54
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_SAP_f050_d2,unlearned,SAP,0.5,2.0,s4_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,55
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_SSD_f010_d3,unlearned,SSD,0.1,3.0,s3_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,56
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_SSD_f010_d2,unlearned,SSD,0.1,2.0,s4_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,57
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_SSD_f050_d2,unlearned,SSD,0.5,2.0,s1_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,58
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_SAP_f050_d2,unlearned,SAP,0.5,2.0,s5_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,59
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_SAP_f050_d2,unlearned,SAP,0.5,2.0,s0_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,60
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_SAP_f010_d3,unlearned,SAP,0.1,3.0,s5_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,61
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_SAP_f010_d1,unlearned,SAP,0.1,1.0,s2_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,62
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_SSD_f010_d2,unlearned,SSD,0.1,2.0,s2_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,63
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_SAP_f100_d1,unlearned,SAP,1.0,1.0,s6_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,64
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_SSD_f010_d2,unlearned,SSD,0.1,2.0,s5_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,65
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_SSD_f010_d1,unlearned,SSD,0.1,1.0,s0_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,66
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_SAP_f010_d3,unlearned,SAP,0.1,3.0,s1_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,67
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_SSD_f050_d2,unlearned,SSD,0.5,2.0,s2_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,68
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_SSD_f050_d1,unlearned,SSD,0.5,1.0,s1_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,69
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_SAP_f050_d1,unlearned,SAP,0.5,1.0,s6_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,70
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_SSD_f010_d2,unlearned,SSD,0.1,2.0,s1_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,71
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_SAP_f010_d2,unlearned,SAP,0.1,2.0,s0_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,72
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_SAP_f010_d1,unlearned,SAP,0.1,1.0,s4_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,73
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_SSD_f010_d2,unlearned,SSD,0.1,2.0,s6_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,74
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_SAP_f050_d2,unlearned,SAP,0.5,2.0,s5_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,75
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_SAP_f050_d3,unlearned,SAP,0.5,3.0,s0_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,76
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_SAP_f050_d2,unlearned,SAP,0.5,2.0,s1_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,77
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_SAP_f100_d1,unlearned,SAP,1.0,1.0,s0_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,78
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_SSD_f010_d2,unlearned,SSD,0.1,2.0,s3_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,79
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_SAP_f010_d3,unlearned,SAP,0.1,3.0,s2_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,80
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_SAP_f100_d1,unlearned,SAP,1.0,1.0,s4_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,81
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_SSD_f050_d3,unlearned,SSD,0.5,3.0,s5_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,82
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_SAP_f050_d1,unlearned,SAP,0.5,1.0,s4_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,83
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_SSD_f050_d3,unlearned,SSD,0.5,3.0,s4_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,84
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_SAP_f050_d2,unlearned,SAP,0.5,2.0,s6_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,85
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_SAP_f100_d1,unlearned,SAP,1.0,1.0,s2_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,86
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_SAP_f010_d1,unlearned,SAP,0.1,1.0,s5_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,87
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_SAP_f050_d2,unlearned,SAP,0.5,2.0,s3_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,88
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_SAP_f050_d2,unlearned,SAP,0.5,2.0,s0_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,89
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_SAP_f100_d1,unlearned,SAP,1.0,1.0,s1_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,90
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_SAP_f010_d2,unlearned,SAP,0.1,2.0,s3_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,91
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_SSD_f010_d3,unlearned,SSD,0.1,3.0,s3_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,92
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_SSD_f010_d1,unlearned,SSD,0.1,1.0,s0_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,93
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_SAP_f050_d3,unlearned,SAP,0.5,3.0,s0_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,94
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_SSD_f010_d3,unlearned,SSD,0.1,3.0,s1_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,95
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_SAP_f010_d3,unlearned,SAP,0.1,3.0,s1_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,96
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_SAP_f100_d1,unlearned,SAP,1.0,1.0,s3_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,97
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_SSD_f050_d1,unlearned,SSD,0.5,1.0,s6_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,98
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_SSD_f050_d1,unlearned,SSD,0.5,1.0,s5_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,99
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_SSD_f100_d1,unlearned,SSD,1.0,1.0,s2_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,100
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_SAP_f050_d3,unlearned,SAP,0.5,3.0,s5_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,101
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_SSD_f050_d1,unlearned,SSD,0.5,1.0,s5_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,102
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_SSD_f010_d3,unlearned,SSD,0.1,3.0,s2_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,103
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_SSD_f010_d2,unlearned,SSD,0.1,2.0,s5_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,104
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_SSD_f050_d2,unlearned,SSD,0.5,2.0,s0_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,105
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_SSD_f010_d2,unlearned,SSD,0.1,2.0,s3_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,106
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_SSD_f010_d1,unlearned,SSD,0.1,1.0,s6_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,107
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_SSD_f050_d2,unlearned,SSD,0.5,2.0,s3_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,108
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_SAP_f050_d3,unlearned,SAP,0.5,3.0,s1_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,109
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_SAP_f010_d1,unlearned,SAP,0.1,1.0,s6_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,110
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_SAP_f010_d2,unlearned,SAP,0.1,2.0,s5_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,111
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_SSD_f010_d3,unlearned,SSD,0.1,3.0,s6_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,112
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_SSD_f100_d1,unlearned,SSD,1.0,1.0,s5_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,113
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_SAP_f100_d1,unlearned,SAP,1.0,1.0,s0_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,114
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_SSD_f010_d1,unlearned,SSD,0.1,1.0,s5_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,115
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_SSD_f050_d3,unlearned,SSD,0.5,3.0,s3_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,116
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_SAP_f050_d2,unlearned,SAP,0.5,2.0,s3_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,117
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_SAP_f050_d1,unlearned,SAP,0.5,1.0,s2_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,118
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_SSD_f050_d3,unlearned,SSD,0.5,3.0,s3_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,119
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_SSD_f010_d3,unlearned,SSD,0.1,3.0,s5_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,120
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_SAP_f010_d1,unlearned,SAP,0.1,1.0,s1_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,121
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_SSD_f050_d1,unlearned,SSD,0.5,1.0,s3_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,122
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_SSD_f050_d1,unlearned,SSD,0.5,1.0,s2_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,123
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_SSD_f050_d1,unlearned,SSD,0.5,1.0,s4_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,124
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_SAP_f050_d3,unlearned,SAP,0.5,3.0,s3_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,125
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_SSD_f050_d1,unlearned,SSD,0.5,1.0,s4_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,126
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_SSD_f010_d1,unlearned,SSD,0.1,1.0,s6_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,127
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_SAP_f050_d2,unlearned,SAP,0.5,2.0,s2_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,128
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_SAP_f050_d3,unlearned,SAP,0.5,3.0,s1_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,129
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_SSD_f050_d1,unlearned,SSD,0.5,1.0,s4_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,130
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_SSD_f050_d2,unlearned,SSD,0.5,2.0,s5_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,131
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_SSD_f010_d1,unlearned,SSD,0.1,1.0,s4_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,132
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_SAP_f050_d2,unlearned,SAP,0.5,2.0,s4_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,133
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_SAP_f050_d3,unlearned,SAP,0.5,3.0,s6_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,134
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_SAP_f010_d1,unlearned,SAP,0.1,1.0,s5_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,135
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_SSD_f050_d2,unlearned,SSD,0.5,2.0,s3_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,136
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_SSD_f010_d2,unlearned,SSD,0.1,2.0,s1_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,137
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_SSD_f010_d3,unlearned,SSD,0.1,3.0,s6_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,138
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_SSD_f010_d3,unlearned,SSD,0.1,3.0,s6_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,139
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_SSD_f050_d3,unlearned,SSD,0.5,3.0,s4_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,140
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_SSD_f050_d2,unlearned,SSD,0.5,2.0,s6_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,141
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_SSD_f010_d3,unlearned,SSD,0.1,3.0,s0_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,142
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_SAP_f100_d1,unlearned,SAP,1.0,1.0,s6_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,143
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_SSD_f050_d2,unlearned,SSD,0.5,2.0,s3_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,144
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_SSD_f010_d2,unlearned,SSD,0.1,2.0,s4_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,145
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_SSD_f100_d1,unlearned,SSD,1.0,1.0,s1_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,146
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_SSD_f050_d3,unlearned,SSD,0.5,3.0,s3_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,147
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_SSD_f010_d3,unlearned,SSD,0.1,3.0,s3_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,148
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_SSD_f050_d3,unlearned,SSD,0.5,3.0,s2_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,149
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_SAP_f050_d2,unlearned,SAP,0.5,2.0,s5_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,150
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_SAP_f010_d1,unlearned,SAP,0.1,1.0,s4_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,151
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_SAP_f100_d1,unlearned,SAP,1.0,1.0,s4_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,152
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_SSD_f100_d1,unlearned,SSD,1.0,1.0,s0_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,153
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_SAP_f050_d3,unlearned,SAP,0.5,3.0,s2_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,154
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_SSD_f010_d2,unlearned,SSD,0.1,2.0,s6_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,155
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_SSD_f050_d2,unlearned,SSD,0.5,2.0,s2_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,156
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_SSD_f050_d3,unlearned,SSD,0.5,3.0,s1_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,157
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_SSD_f050_d1,unlearned,SSD,0.5,1.0,s0_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,158
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_SAP_f050_d3,unlearned,SAP,0.5,3.0,s4_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,159
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_SAP_f100_d1,unlearned,SAP,1.0,1.0,s5_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,160
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_SSD_f050_d3,unlearned,SSD,0.5,3.0,s2_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,161
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_SAP_f050_d3,unlearned,SAP,0.5,3.0,s4_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,162
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_SSD_f100_d1,unlearned,SSD,1.0,1.0,s2_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,163
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_SSD_f050_d2,unlearned,SSD,0.5,2.0,s6_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,164
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_SAP_f050_d3,unlearned,SAP,0.5,3.0,s2_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,165
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_SAP_f050_d3,unlearned,SAP,0.5,3.0,s6_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,166
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_SAP_f050_d1,unlearned,SAP,0.5,1.0,s4_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,167
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_SSD_f010_d3,unlearned,SSD,0.1,3.0,s0_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,168
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_SSD_f100_d1,unlearned,SSD,1.0,1.0,s6_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,169
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_SAP_f010_d2,unlearned,SAP,0.1,2.0,s2_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,170
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_SAP_f100_d1,unlearned,SAP,1.0,1.0,s2_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,171
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_SAP_f010_d1,unlearned,SAP,0.1,1.0,s3_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,172
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_SAP_f010_d2,unlearned,SAP,0.1,2.0,s5_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,173
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_SSD_f050_d3,unlearned,SSD,0.5,3.0,s6_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,174
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_SAP_f010_d2,unlearned,SAP,0.1,2.0,s2_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,175
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_SAP_f010_d2,unlearned,SAP,0.1,2.0,s3_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,176
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_SSD_f010_d1,unlearned,SSD,0.1,1.0,s5_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,177
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_SAP_f010_d1,unlearned,SAP,0.1,1.0,s1_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,178
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_SAP_f010_d2,unlearned,SAP,0.1,2.0,s4_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,179
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_SSD_f050_d2,unlearned,SSD,0.5,2.0,s5_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,180
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_SAP_f050_d1,unlearned,SAP,0.5,1.0,s5_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,181
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_SAP_f100_d1,unlearned,SAP,1.0,1.0,s0_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,182
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_SAP_f010_d2,unlearned,SAP,0.1,2.0,s6_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,183
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_SSD_f100_d1,unlearned,SSD,1.0,1.0,s6_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,184
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_SSD_f010_d1,unlearned,SSD,0.1,1.0,s0_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,185
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_SSD_f100_d1,unlearned,SSD,1.0,1.0,s5_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,186
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_SAP_f050_d2,unlearned,SAP,0.5,2.0,s2_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,187
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_SAP_f010_d2,unlearned,SAP,0.1,2.0,s3_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,188
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_SSD_f100_d1,unlearned,SSD,1.0,1.0,s1_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,189
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_SSD_f010_d2,unlearned,SSD,0.1,2.0,s5_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,190
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_SAP_f010_d1,unlearned,SAP,0.1,1.0,s4_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,191
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_SSD_f100_d1,unlearned,SSD,1.0,1.0,s4_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,192
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_SSD_f010_d2,unlearned,SSD,0.1,2.0,s0_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,193
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_SSD_f100_d1,unlearned,SSD,1.0,1.0,s4_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,194
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_SSD_f050_d1,unlearned,SSD,0.5,1.0,s1_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,195
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_SAP_f010_d3,unlearned,SAP,0.1,3.0,s5_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,196
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_SAP_f050_d2,unlearned,SAP,0.5,2.0,s3_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,197
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_SAP_f010_d3,unlearned,SAP,0.1,3.0,s3_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,198
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_SAP_f050_d1,unlearned,SAP,0.5,1.0,s5_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,199
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_SAP_f010_d2,unlearned,SAP,0.1,2.0,s6_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,200
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_SAP_f050_d1,unlearned,SAP,0.5,1.0,s3_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,201
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_SAP_f010_d2,unlearned,SAP,0.1,2.0,s0_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,202
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_SSD_f050_d3,unlearned,SSD,0.5,3.0,s1_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,203
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_SSD_f010_d3,unlearned,SSD,0.1,3.0,s5_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,204
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_SAP_f050_d3,unlearned,SAP,0.5,3.0,s6_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,205
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_SSD_f100_d1,unlearned,SSD,1.0,1.0,s4_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,206
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_SSD_f050_d1,unlearned,SSD,0.5,1.0,s0_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,207
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_SSD_f010_d1,unlearned,SSD,0.1,1.0,s4_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,208
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_SAP_f100_d1,unlearned,SAP,1.0,1.0,s3_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,209
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_SSD_f050_d1,unlearned,SSD,0.5,1.0,s2_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,210
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_SSD_f050_d1,unlearned,SSD,0.5,1.0,s0_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,211
+2,endoscopy,s2_endoscopy,confirmatory,text,s2_endoscopy_SSD_f010_d2,unlearned,SSD,0.1,2.0,s2_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,212
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_SAP_f050_d1,unlearned,SAP,0.5,1.0,s1_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,213
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_SAP_f010_d1,unlearned,SAP,0.1,1.0,s0_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,214
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_SSD_f050_d1,unlearned,SSD,0.5,1.0,s2_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,215
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_SAP_f010_d1,unlearned,SAP,0.1,1.0,s1_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,216
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_SSD_f010_d3,unlearned,SSD,0.1,3.0,s2_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,217
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_SSD_f010_d2,unlearned,SSD,0.1,2.0,s3_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,218
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_SAP_f010_d3,unlearned,SAP,0.1,3.0,s2_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,219
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_SSD_f050_d2,unlearned,SSD,0.5,2.0,s4_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,220
+4,ultrasound,s4_ultrasound,confirmatory,text,s4_ultrasound_SAP_f010_d2,unlearned,SAP,0.1,2.0,s4_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,221
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_SAP_f050_d2,unlearned,SAP,0.5,2.0,s6_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,222
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_SAP_f010_d3,unlearned,SAP,0.1,3.0,s2_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,223
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_SAP_f010_d3,unlearned,SAP,0.1,3.0,s0_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,224
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_SAP_f010_d2,unlearned,SAP,0.1,2.0,s1_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,225
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_SAP_f010_d2,unlearned,SAP,0.1,2.0,s2_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,226
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_SAP_f010_d1,unlearned,SAP,0.1,1.0,s0_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,227
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_SAP_f010_d2,unlearned,SAP,0.1,2.0,s1_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,228
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_SAP_f050_d1,unlearned,SAP,0.5,1.0,s6_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,229
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_SSD_f010_d1,unlearned,SSD,0.1,1.0,s6_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,230
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_SAP_f010_d3,unlearned,SAP,0.1,3.0,s5_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,231
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_SSD_f010_d3,unlearned,SSD,0.1,3.0,s5_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,232
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_SSD_f050_d2,unlearned,SSD,0.5,2.0,s0_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,233
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_SSD_f010_d1,unlearned,SSD,0.1,1.0,s2_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,234
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_SSD_f010_d2,unlearned,SSD,0.1,2.0,s4_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,235
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_SAP_f010_d3,unlearned,SAP,0.1,3.0,s6_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,236
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_SAP_f010_d3,unlearned,SAP,0.1,3.0,s1_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,237
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_SSD_f010_d3,unlearned,SSD,0.1,3.0,s0_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,238
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_SSD_f050_d3,unlearned,SSD,0.5,3.0,s2_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,239
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_SSD_f050_d3,unlearned,SSD,0.5,3.0,s0_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,240
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_SSD_f100_d1,unlearned,SSD,1.0,1.0,s3_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,241
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_SAP_f010_d2,unlearned,SAP,0.1,2.0,s5_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,242
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_SAP_f010_d3,unlearned,SAP,0.1,3.0,s3_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,243
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_SAP_f050_d1,unlearned,SAP,0.5,1.0,s1_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,244
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_SAP_f100_d1,unlearned,SAP,1.0,1.0,s3_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,245
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_SSD_f050_d2,unlearned,SSD,0.5,2.0,s1_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,246
+6,endoscopy,s6_endoscopy,confirmatory,text,s6_endoscopy_SAP_f050_d2,unlearned,SAP,0.5,2.0,s6_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,247
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_SSD_f050_d2,unlearned,SSD,0.5,2.0,s4_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,248
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_SAP_f010_d3,unlearned,SAP,0.1,3.0,s0_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,249
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_SAP_f010_d2,unlearned,SAP,0.1,2.0,s4_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,250
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_SSD_f050_d1,unlearned,SSD,0.5,1.0,s1_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,251
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_SSD_f010_d3,unlearned,SSD,0.1,3.0,s1_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,252
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_SSD_f010_d1,unlearned,SSD,0.1,1.0,s1_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,253
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_SAP_f100_d1,unlearned,SAP,1.0,1.0,s1_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,254
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_SAP_f010_d2,unlearned,SAP,0.1,2.0,s1_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,255
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_SSD_f010_d1,unlearned,SSD,0.1,1.0,s3_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,256
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_SAP_f050_d2,unlearned,SAP,0.5,2.0,s1_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,257
+2,ultrasound,s2_ultrasound,confirmatory,text,s2_ultrasound_SSD_f010_d1,unlearned,SSD,0.1,1.0,s2_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,258
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_SAP_f050_d3,unlearned,SAP,0.5,3.0,s0_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,259
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_SAP_f100_d1,unlearned,SAP,1.0,1.0,s1_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,260
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_SSD_f010_d2,unlearned,SSD,0.1,2.0,s2_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,261
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_SSD_f100_d1,unlearned,SSD,1.0,1.0,s1_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,262
+5,endoscopy,s5_endoscopy,confirmatory,text,s5_endoscopy_SSD_f050_d2,unlearned,SSD,0.5,2.0,s5_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,263
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_SAP_f050_d1,unlearned,SAP,0.5,1.0,s0_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,264
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_SSD_f010_d3,unlearned,SSD,0.1,3.0,s1_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,265
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_SAP_f050_d2,unlearned,SAP,0.5,2.0,s1_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,266
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_SSD_f050_d3,unlearned,SSD,0.5,3.0,s4_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,267
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_SAP_f050_d1,unlearned,SAP,0.5,1.0,s5_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,268
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_SSD_f050_d1,unlearned,SSD,0.5,1.0,s5_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,269
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_SSD_f100_d1,unlearned,SSD,1.0,1.0,s3_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,270
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_SAP_f010_d1,unlearned,SAP,0.1,1.0,s3_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,271
+3,ultrasound,s3_ultrasound,confirmatory,text,s3_ultrasound_SAP_f010_d3,unlearned,SAP,0.1,3.0,s3_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,272
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_SAP_f050_d3,unlearned,SAP,0.5,3.0,s1_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,273
+0,ultrasound,s0_ultrasound,dev,text,s0_ultrasound_SAP_f050_d1,unlearned,SAP,0.5,1.0,s0_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,274
+3,dermoscopy,s3_dermoscopy,confirmatory,text,s3_dermoscopy_SSD_f050_d1,unlearned,SSD,0.5,1.0,s3_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,275
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_SAP_f050_d2,unlearned,SAP,0.5,2.0,s4_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,276
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_SSD_f050_d1,unlearned,SSD,0.5,1.0,s6_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,277
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_SSD_f050_d3,unlearned,SSD,0.5,3.0,s5_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,278
+2,dermoscopy,s2_dermoscopy,confirmatory,text,s2_dermoscopy_SAP_f010_d1,unlearned,SAP,0.1,1.0,s2_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,279
+5,dermoscopy,s5_dermoscopy,confirmatory,text,s5_dermoscopy_SSD_f010_d1,unlearned,SSD,0.1,1.0,s5_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,280
+0,dermoscopy,s0_dermoscopy,dev,text,s0_dermoscopy_SSD_f050_d3,unlearned,SSD,0.5,3.0,s0_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,281
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_SSD_f010_d3,unlearned,SSD,0.1,3.0,s4_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,282
+1,ultrasound,s1_ultrasound,confirmatory,text,s1_ultrasound_SAP_f050_d1,unlearned,SAP,0.5,1.0,s1_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,283
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_SSD_f010_d1,unlearned,SSD,0.1,1.0,s3_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,284
+0,endoscopy,s0_endoscopy,dev,text,s0_endoscopy_SAP_f050_d1,unlearned,SAP,0.5,1.0,s0_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,285
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_SAP_f010_d1,unlearned,SAP,0.1,1.0,s6_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,286
+1,dermoscopy,s1_dermoscopy,confirmatory,text,s1_dermoscopy_SSD_f010_d2,unlearned,SSD,0.1,2.0,s1_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,287
+1,endoscopy,s1_endoscopy,confirmatory,text,s1_endoscopy_SSD_f050_d3,unlearned,SSD,0.5,3.0,s1_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,288
+6,ultrasound,s6_ultrasound,confirmatory,text,s6_ultrasound_SSD_f050_d3,unlearned,SSD,0.5,3.0,s6_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,289
+4,dermoscopy,s4_dermoscopy,confirmatory,text,s4_dermoscopy_SSD_f010_d1,unlearned,SSD,0.1,1.0,s4_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,290
+3,endoscopy,s3_endoscopy,confirmatory,text,s3_endoscopy_SAP_f050_d1,unlearned,SAP,0.5,1.0,s3_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,291
+4,endoscopy,s4_endoscopy,confirmatory,text,s4_endoscopy_SAP_f010_d3,unlearned,SAP,0.1,3.0,s4_endoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,292
+6,dermoscopy,s6_dermoscopy,confirmatory,text,s6_dermoscopy_SSD_f010_d2,unlearned,SSD,0.1,2.0,s6_dermoscopy_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,293
+5,ultrasound,s5_ultrasound,confirmatory,text,s5_ultrasound_SAP_f010_d1,unlearned,SAP,0.1,1.0,s5_ultrasound_corrupted,False,corrupted model + flagged subset (+ trusted set for SAP),2,294

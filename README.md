@@ -6,14 +6,11 @@ After unlearning corrupted masks in Medical SAM3 fine-tuned on held-out ultrasou
 data, does the fix hold across prompt types (text, box, point) and modalities? And does a
 pixel-level internal audit predict where errors re-emerge?
 
-The layout and power files in `design/` still describe design v1 (SAM ViT-B on Kvasir-SEG) and
-are due to be regenerated; see `design/DESIGN.md` Sec. 10.
-
 | Path | Contents |
 |---|---|
 | `design/DESIGN.md` | Study design v2 (Medical SAM3, held-out ultrasound and dermoscopy, prompt-conditional unlearning) |
-| `design/make_layout.py` | Seeded run manifest (`runs.csv`), prompt grid, fine-tuning checkpoints |
-| `design/power_sim*.py` | Simulation-based power analysis behind the seed count |
+| `design/make_layout.py` | Seeded run manifest (`runs.csv`), prompt grid, recovery arms |
+| `design/power_sim_v2.py` | Simulation-based power analysis behind the seed count |
 | `src/dedup.py` | Near-duplicate grouping (perceptual hash + shift-tolerant SSIM) |
 | `src/make_splits.py` | Group-wise, size-stratified train/trusted/val/test split |
 | `tests/` | Synthetic tests for grouping and splitting |

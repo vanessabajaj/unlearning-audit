@@ -1,6 +1,0 @@
-step,data,lr
-0,trusted set (clean),same as final training stage
-100,trusted set (clean),same as final training stage
-300,trusted set (clean),same as final training stage
-1000,trusted set (clean),same as final training stage
-3000,trusted set (clean),same as final training stage

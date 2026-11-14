@@ -1,0 +1,7 @@
+arm,setting,detail
+finetune,step_0,"continued fine-tuning on trusted set, text prompts"
+finetune,step_100,"continued fine-tuning on trusted set, text prompts"
+finetune,step_300,"continued fine-tuning on trusted set, text prompts"
+finetune,step_1000,"continued fine-tuning on trusted set, text prompts"
+quantization,int8,post-training weight quantization (secondary arm)
+quantization,int4,post-training weight quantization (secondary arm)

@@ -6,8 +6,8 @@ Status: **draft v2** for pre-registration. It replaces v1 (SAM ViT-B on Kvasir-S
 v1 met none of assignment card A. Why the direction changed, and the prior art behind each claim, are in
 `reports/Unlearning audit novelty and gap.md`.
 
-> **Not yet regenerated for v2:** `runs.csv`, `prompt_conditions.csv`, `recovery_finetune.csv` and the
-> power results in `power_*.csv` / `power_curve.png` still describe v1. Regenerate them (Sec. 10) before freezing.
+Layout: `make_layout.py` writes `runs.csv`, `prompt_conditions.csv` and `recovery_arms.csv` (master seed 20261114).
+Power: `power_sim_v2.py` writes `power_results_v2.csv`, `power_type1_v2.csv` and `power_curve_v2.png`.
 
 ## 0. How this maps onto card A
 
@@ -122,7 +122,7 @@ SAP (activation SVD) to the trainable parameters only, and record the choice.
 - Per seed × modality: 3 references + 2 RmF fine-tunes + 2 × (2 × 3 + 1) = 14 SSD/SAP models,
   so **5 fine-tunes and 16 unlearned models**.
 - **Seeds:** 1 development (0) + **6 confirmatory (provisional, Sec. 10)**.
-- **Totals:** 7 seeds × 3 modalities × 5 = **105 fine-tunes**, and 6 × 3 × 16 = **288 confirmatory unlearned models**.
+- **Totals:** 7 seeds × 3 modalities × 5 = **105 fine-tunes**, and 6 × 3 × 16 = **288 confirmatory unlearned models** (`runs.csv`: 399 models, 342 confirmatory).
 
 If compute is short, cut in this order: drop the 10% fraction, then the Kvasir control, then reduce draws.
 Never cut seeds below the power target.
@@ -139,7 +139,7 @@ Never cut seeds below the power target.
 
 **(a) Prompt arm.** No weight updates. Fully crossed within model and image, with fixed per-image perturbation seeds:
 text (canonical and 2 synonyms), box (tight; expanded 10/20/30%, where expansion covers the ring), point (1/3/5;
-shifts of 0/10/25%), and text+box. This is about 15 conditions, with 3 random draws per stochastic condition.
+shifts of 0/10/25%), and text+box. That is 17 conditions (`prompt_conditions.csv`), with 3 random draws for each shifted or multi-point condition (33 evaluations per image per model).
 **Training prompt = text**, so text is the reference level for H4.
 
 **(b) Fine-tuning arm.** Continued fine-tuning on the trusted set, with checkpoints at 0/100/300/1000 steps, run
@@ -212,18 +212,58 @@ from it and worsens recovery.
 - Freeze code, thresholds, bands, prompts, synonyms and the analysis script before seeds 1-6, and record the commit hash.
 - Use a randomized execution order (regenerated `runs.csv`), and exclude the dev seed from confirmatory statistics.
 
-## 10. Replication, power and compute: to redo
+## 10. Replication, power and compute
 
-- **Power:** v1's simulation (`power_sim_reps.py`) gave 0.95-0.99 for H3 with 36 unlearned models per seed. v2 has
-  16 per seed × modality, or 48 per seed pooled with modality blocks. Re-run the simulation with that structure and
-  α = 0.017. H4 is not yet simulated: add a simulation for the prompt-type contrast, with image and model random
-  effects. Re-estimate variance components on dev seed 0 before freezing the seed count.
-- **Compute:** not measured. SAM 3 runs at 1008 px and is much larger than SAM ViT-B.
-  - On seed 0, time one fine-tune, one SSD, one SAP and the full prompt arm for one model per modality.
-  - Then extrapolate to 105 fine-tunes and 288 models × ~15 prompt conditions × 3 recovery arms.
-  - Run **get-available-resources** before committing a GPU plan.
-- **Regenerate:** `runs.csv` (seeds × modalities × conditions, randomized execution order), `prompt_conditions.csv`
-  (with text, synonyms and text+box) and `recovery_finetune.csv`.
+**Unit of replication: the block** (one seed × modality). Each block is an independent set of
+fine-tunes on its own dataset, so 6 confirmatory seeds give 18 independent blocks.
+Three co-primary tests at α = 0.05/3. Simulated by `power_sim_v2.py`.
+There is no pilot data, so every input is an assumption.
+
+**H3 (audit adds prediction beyond M0).**
+- Analysis: model-level regression R ~ A + M0 + block, on the 75% of models per block that look clean.
+- Assumptions carried over from v1: rho0 = 0.3, rhoR = 0.8, and variance shares of 40% condition, 20% block, 40% model.
+  Condition effects now vary partly by modality.
+- New in v2: draws of one condition may share variance through their common corrupted parent (`draw_share` 0 or 0.5).
+- Type I error: 0.018-0.019 against a target of 0.017.
+
+| rhoA | 1 draw, 6 seeds | **3 draws, 6 seeds** | 3 draws, 8 seeds |
+|---|---|---|---|
+| 0.4 | 0.53-0.55 | **0.86** | 0.93-0.94 |
+| 0.5 | 0.78-0.80 | **0.98** | 0.99 |
+| 0.6 | 0.93 | **1.00** | 1.00 |
+
+Shared variance between draws (`draw_share` 0.5) made no material difference. That was v1's main open risk,
+and here it no longer matters, because the block count, not the draws, carries the replication.
+
+**H4 (geometric vs text re-emergence).**
+- Analysis: one-sample t-test on block means of D, where D = re-emergence under geometric prompts minus under text, per model.
+- delta is expressed in SDs of the model-level D. Assumed block share of D's variance: 0.3.
+- Type I error: 0.017-0.020.
+
+| delta (SD) | 4 seeds | 5 seeds | **6 seeds** | 8 seeds |
+|---|---|---|---|---|
+| 0.3 | 0.19 | 0.27 | **0.34** | 0.49 |
+| 0.5 | 0.57 | 0.72 | **0.84** | 0.94 |
+| 0.5, effect in one modality only | 0.12 | 0.20 | **0.30** | 0.55 |
+
+**Decision: 6 confirmatory seeds (18 blocks) with 3 draws.**
+- H3 is well powered for rhoA ≥ 0.4.
+- H4 is powered only for a **large, consistent** effect (delta ≥ 0.5 SD, 0.84 power). The minimum detectable effect is about 0.5 SD.
+- Report H4 as a test for a large prompt-bypass effect. A null result does not rule out small or modality-specific bypass.
+- Per-modality H4 contrasts are secondary and underpowered by design.
+- Going to 8 seeds buys little for H4 (0.49 at 0.3 SD), so it isn't worth 30 more fine-tunes unless seed 0 shows otherwise.
+
+**Recheck on dev seed 0 before freezing.**
+1. The block share of D's variance. It drives H4: at a lower share, power rises sharply.
+2. rhoA and rho0 from seed 0's 48 unlearned models.
+3. The fraction of models that look clean.
+
+Re-run `power_sim_v2.py` with these estimates. Seed 0 is excluded from confirmatory analysis, so using it to set n is legitimate.
+
+**Compute: not measured.** SAM 3 runs at 1008 px and is far larger than SAM ViT-B.
+- On seed 0, time one fine-tune, one SSD, one SAP, and the full prompt arm (33 evaluations per image) for one model per modality.
+- Then extrapolate to 105 fine-tunes and 342 models × 33 prompt evaluations × the recovery arms in `recovery_arms.csv`.
+- Run **get-available-resources** before committing a GPU plan.
 
 ## 11. Verification before any "first to" claim
 
