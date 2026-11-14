@@ -1,0 +1,274 @@
+seed,split,model_id,condition,method,flag_frac,parent,trains_from_scratch,train_data,flag_draw,tier,exec_order
+1,confirmatory,s1_oracle,oracle,,,,True,train images minus ALL corrupted,,1,1
+0,dev,s0_RmF_f025_d1,unlearned,RmF,0.25,,True,train images minus flagged subset,1.0,1,2
+6,confirmatory,s6_clean,clean,,,,True,"all train images, original masks",,1,3
+5,confirmatory,s5_corrupt,corrupted,,,,True,"all train images, 40% with ring",,1,4
+6,confirmatory,s6_RmF_f050_d1,unlearned,RmF,0.5,,True,train images minus flagged subset,1.0,1,5
+1,confirmatory,s1_RmF_f010_d1,unlearned,RmF,0.1,,True,train images minus flagged subset,1.0,1,6
+6,confirmatory,s6_oracle,oracle,,,,True,train images minus ALL corrupted,,1,7
+3,confirmatory,s3_RmF_f050_d1,unlearned,RmF,0.5,,True,train images minus flagged subset,1.0,1,8
+5,confirmatory,s5_RmF_f010_d1,unlearned,RmF,0.1,,True,train images minus flagged subset,1.0,1,9
+3,confirmatory,s3_oracle,oracle,,,,True,train images minus ALL corrupted,,1,10
+1,confirmatory,s1_RmF_f025_d1,unlearned,RmF,0.25,,True,train images minus flagged subset,1.0,1,11
+3,confirmatory,s3_RmF_f025_d1,unlearned,RmF,0.25,,True,train images minus flagged subset,1.0,1,12
+5,confirmatory,s5_RmF_f100_d1,unlearned,RmF,1.0,,True,train images minus flagged subset,1.0,1,13
+5,confirmatory,s5_oracle,oracle,,,,True,train images minus ALL corrupted,,1,14
+1,confirmatory,s1_corrupt,corrupted,,,,True,"all train images, 40% with ring",,1,15
+3,confirmatory,s3_clean,clean,,,,True,"all train images, original masks",,1,16
+2,confirmatory,s2_corrupt,corrupted,,,,True,"all train images, 40% with ring",,1,17
+4,confirmatory,s4_RmF_f025_d1,unlearned,RmF,0.25,,True,train images minus flagged subset,1.0,1,18
+3,confirmatory,s3_RmF_f100_d1,unlearned,RmF,1.0,,True,train images minus flagged subset,1.0,1,19
+5,confirmatory,s5_RmF_f025_d1,unlearned,RmF,0.25,,True,train images minus flagged subset,1.0,1,20
+2,confirmatory,s2_RmF_f050_d1,unlearned,RmF,0.5,,True,train images minus flagged subset,1.0,1,21
+5,confirmatory,s5_clean,clean,,,,True,"all train images, original masks",,1,22
+0,dev,s0_RmF_f100_d1,unlearned,RmF,1.0,,True,train images minus flagged subset,1.0,1,23
+4,confirmatory,s4_RmF_f050_d1,unlearned,RmF,0.5,,True,train images minus flagged subset,1.0,1,24
+0,dev,s0_RmF_f010_d1,unlearned,RmF,0.1,,True,train images minus flagged subset,1.0,1,25
+4,confirmatory,s4_RmF_f010_d1,unlearned,RmF,0.1,,True,train images minus flagged subset,1.0,1,26
+6,confirmatory,s6_RmF_f010_d1,unlearned,RmF,0.1,,True,train images minus flagged subset,1.0,1,27
+0,dev,s0_oracle,oracle,,,,True,train images minus ALL corrupted,,1,28
+2,confirmatory,s2_RmF_f010_d1,unlearned,RmF,0.1,,True,train images minus flagged subset,1.0,1,29
+6,confirmatory,s6_RmF_f025_d1,unlearned,RmF,0.25,,True,train images minus flagged subset,1.0,1,30
+4,confirmatory,s4_corrupt,corrupted,,,,True,"all train images, 40% with ring",,1,31
+0,dev,s0_clean,clean,,,,True,"all train images, original masks",,1,32
+0,dev,s0_corrupt,corrupted,,,,True,"all train images, 40% with ring",,1,33
+5,confirmatory,s5_RmF_f050_d1,unlearned,RmF,0.5,,True,train images minus flagged subset,1.0,1,34
+1,confirmatory,s1_RmF_f100_d1,unlearned,RmF,1.0,,True,train images minus flagged subset,1.0,1,35
+4,confirmatory,s4_clean,clean,,,,True,"all train images, original masks",,1,36
+0,dev,s0_RmF_f050_d1,unlearned,RmF,0.5,,True,train images minus flagged subset,1.0,1,37
+2,confirmatory,s2_oracle,oracle,,,,True,train images minus ALL corrupted,,1,38
+4,confirmatory,s4_oracle,oracle,,,,True,train images minus ALL corrupted,,1,39
+3,confirmatory,s3_corrupt,corrupted,,,,True,"all train images, 40% with ring",,1,40
+1,confirmatory,s1_clean,clean,,,,True,"all train images, original masks",,1,41
+6,confirmatory,s6_corrupt,corrupted,,,,True,"all train images, 40% with ring",,1,42
+2,confirmatory,s2_RmF_f025_d1,unlearned,RmF,0.25,,True,train images minus flagged subset,1.0,1,43
+2,confirmatory,s2_RmF_f100_d1,unlearned,RmF,1.0,,True,train images minus flagged subset,1.0,1,44
+6,confirmatory,s6_RmF_f100_d1,unlearned,RmF,1.0,,True,train images minus flagged subset,1.0,1,45
+3,confirmatory,s3_RmF_f010_d1,unlearned,RmF,0.1,,True,train images minus flagged subset,1.0,1,46
+2,confirmatory,s2_clean,clean,,,,True,"all train images, original masks",,1,47
+1,confirmatory,s1_RmF_f050_d1,unlearned,RmF,0.5,,True,train images minus flagged subset,1.0,1,48
+4,confirmatory,s4_RmF_f100_d1,unlearned,RmF,1.0,,True,train images minus flagged subset,1.0,1,49
+6,confirmatory,s6_SAP_f010_d1,unlearned,SAP,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,1
+1,confirmatory,s1_SSD_f025_d5,unlearned,SSD,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,2
+2,confirmatory,s2_SAP_f025_d5,unlearned,SAP,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,3
+6,confirmatory,s6_SSD_f025_d2,unlearned,SSD,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,4
+6,confirmatory,s6_SAP_f010_d4,unlearned,SAP,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,5
+6,confirmatory,s6_SSD_f050_d1,unlearned,SSD,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,6
+5,confirmatory,s5_SAP_f010_d3,unlearned,SAP,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,7
+5,confirmatory,s5_SSD_f100_d1,unlearned,SSD,1.0,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,8
+6,confirmatory,s6_SAP_f050_d1,unlearned,SAP,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,9
+5,confirmatory,s5_SSD_f025_d5,unlearned,SSD,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,10
+6,confirmatory,s6_SSD_f050_d5,unlearned,SSD,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,11
+2,confirmatory,s2_SSD_f025_d4,unlearned,SSD,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,12
+4,confirmatory,s4_SSD_f010_d5,unlearned,SSD,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,13
+6,confirmatory,s6_SAP_f025_d1,unlearned,SAP,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,14
+5,confirmatory,s5_SSD_f025_d4,unlearned,SSD,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,15
+1,confirmatory,s1_SAP_f010_d4,unlearned,SAP,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,16
+2,confirmatory,s2_SSD_f010_d5,unlearned,SSD,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,17
+6,confirmatory,s6_SSD_f010_d3,unlearned,SSD,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,18
+5,confirmatory,s5_SAP_f010_d4,unlearned,SAP,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,19
+0,dev,s0_SAP_f050_d1,unlearned,SAP,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,20
+1,confirmatory,s1_SAP_f050_d4,unlearned,SAP,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,21
+3,confirmatory,s3_SAP_f025_d2,unlearned,SAP,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,22
+6,confirmatory,s6_SSD_f025_d3,unlearned,SSD,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,23
+4,confirmatory,s4_SSD_f050_d2,unlearned,SSD,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,24
+5,confirmatory,s5_SAP_f050_d5,unlearned,SAP,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,25
+1,confirmatory,s1_SSD_f025_d1,unlearned,SSD,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,26
+6,confirmatory,s6_SAP_f010_d3,unlearned,SAP,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,27
+0,dev,s0_SSD_f050_d1,unlearned,SSD,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,28
+1,confirmatory,s1_SAP_f050_d3,unlearned,SAP,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,29
+2,confirmatory,s2_SAP_f010_d5,unlearned,SAP,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,30
+2,confirmatory,s2_SSD_f010_d2,unlearned,SSD,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,31
+3,confirmatory,s3_SSD_f010_d3,unlearned,SSD,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,32
+5,confirmatory,s5_SSD_f010_d2,unlearned,SSD,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,33
+2,confirmatory,s2_SSD_f050_d1,unlearned,SSD,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,34
+6,confirmatory,s6_SAP_f050_d4,unlearned,SAP,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,35
+6,confirmatory,s6_SAP_f010_d2,unlearned,SAP,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,36
+0,dev,s0_SSD_f010_d2,unlearned,SSD,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,37
+5,confirmatory,s5_SAP_f025_d5,unlearned,SAP,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,38
+6,confirmatory,s6_SSD_f050_d4,unlearned,SSD,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,39
+0,dev,s0_SSD_f025_d1,unlearned,SSD,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,40
+0,dev,s0_SAP_f050_d5,unlearned,SAP,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,41
+6,confirmatory,s6_SSD_f010_d5,unlearned,SSD,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,42
+5,confirmatory,s5_SAP_f025_d4,unlearned,SAP,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,43
+4,confirmatory,s4_SAP_f025_d2,unlearned,SAP,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,44
+6,confirmatory,s6_SAP_f025_d2,unlearned,SAP,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,45
+6,confirmatory,s6_SAP_f025_d4,unlearned,SAP,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,46
+1,confirmatory,s1_SSD_f010_d2,unlearned,SSD,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,47
+5,confirmatory,s5_SSD_f050_d2,unlearned,SSD,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,48
+6,confirmatory,s6_SAP_f050_d2,unlearned,SAP,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,49
+0,dev,s0_SSD_f050_d3,unlearned,SSD,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,50
+2,confirmatory,s2_SSD_f025_d3,unlearned,SSD,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,51
+2,confirmatory,s2_SSD_f100_d1,unlearned,SSD,1.0,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,52
+5,confirmatory,s5_SSD_f025_d3,unlearned,SSD,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,53
+0,dev,s0_SAP_f025_d1,unlearned,SAP,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,54
+5,confirmatory,s5_SAP_f050_d2,unlearned,SAP,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,55
+3,confirmatory,s3_SAP_f010_d1,unlearned,SAP,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,56
+1,confirmatory,s1_SSD_f100_d1,unlearned,SSD,1.0,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,57
+6,confirmatory,s6_SSD_f025_d4,unlearned,SSD,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,58
+2,confirmatory,s2_SAP_f010_d4,unlearned,SAP,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,59
+5,confirmatory,s5_SAP_f100_d1,unlearned,SAP,1.0,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,60
+2,confirmatory,s2_SAP_f050_d4,unlearned,SAP,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,61
+2,confirmatory,s2_SAP_f025_d3,unlearned,SAP,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,62
+3,confirmatory,s3_SAP_f025_d4,unlearned,SAP,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,63
+4,confirmatory,s4_SSD_f050_d3,unlearned,SSD,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,64
+3,confirmatory,s3_SSD_f010_d2,unlearned,SSD,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,65
+2,confirmatory,s2_SSD_f025_d2,unlearned,SSD,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,66
+0,dev,s0_SAP_f025_d2,unlearned,SAP,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,67
+4,confirmatory,s4_SAP_f025_d3,unlearned,SAP,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,68
+5,confirmatory,s5_SAP_f010_d1,unlearned,SAP,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,69
+5,confirmatory,s5_SSD_f010_d3,unlearned,SSD,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,70
+2,confirmatory,s2_SAP_f050_d5,unlearned,SAP,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,71
+0,dev,s0_SAP_f100_d1,unlearned,SAP,1.0,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,72
+3,confirmatory,s3_SSD_f100_d1,unlearned,SSD,1.0,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,73
+4,confirmatory,s4_SAP_f010_d1,unlearned,SAP,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,74
+3,confirmatory,s3_SSD_f025_d1,unlearned,SSD,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,75
+2,confirmatory,s2_SSD_f050_d3,unlearned,SSD,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,76
+0,dev,s0_SAP_f010_d1,unlearned,SAP,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,77
+1,confirmatory,s1_SAP_f025_d2,unlearned,SAP,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,78
+3,confirmatory,s3_SAP_f050_d3,unlearned,SAP,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,79
+2,confirmatory,s2_SSD_f050_d5,unlearned,SSD,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,80
+0,dev,s0_SAP_f025_d3,unlearned,SAP,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,81
+2,confirmatory,s2_SSD_f025_d1,unlearned,SSD,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,82
+1,confirmatory,s1_SSD_f050_d5,unlearned,SSD,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,83
+0,dev,s0_SSD_f050_d2,unlearned,SSD,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,84
+3,confirmatory,s3_SAP_f025_d5,unlearned,SAP,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,85
+4,confirmatory,s4_SSD_f025_d5,unlearned,SSD,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,86
+5,confirmatory,s5_SAP_f050_d4,unlearned,SAP,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,87
+1,confirmatory,s1_SAP_f025_d5,unlearned,SAP,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,88
+4,confirmatory,s4_SSD_f025_d4,unlearned,SSD,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,89
+6,confirmatory,s6_SAP_f010_d5,unlearned,SAP,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,90
+4,confirmatory,s4_SAP_f050_d1,unlearned,SAP,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,91
+6,confirmatory,s6_SAP_f050_d5,unlearned,SAP,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,92
+0,dev,s0_SSD_f010_d3,unlearned,SSD,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,93
+1,confirmatory,s1_SSD_f050_d1,unlearned,SSD,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,94
+0,dev,s0_SSD_f010_d4,unlearned,SSD,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,95
+3,confirmatory,s3_SAP_f010_d4,unlearned,SAP,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,96
+1,confirmatory,s1_SSD_f010_d5,unlearned,SSD,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,97
+4,confirmatory,s4_SAP_f010_d4,unlearned,SAP,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,98
+6,confirmatory,s6_SAP_f050_d3,unlearned,SAP,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,99
+1,confirmatory,s1_SSD_f050_d4,unlearned,SSD,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,100
+5,confirmatory,s5_SAP_f050_d3,unlearned,SAP,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,101
+1,confirmatory,s1_SSD_f025_d2,unlearned,SSD,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,102
+0,dev,s0_SSD_f010_d1,unlearned,SSD,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,103
+1,confirmatory,s1_SAP_f025_d4,unlearned,SAP,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,104
+4,confirmatory,s4_SAP_f025_d5,unlearned,SAP,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,105
+3,confirmatory,s3_SSD_f010_d5,unlearned,SSD,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,106
+0,dev,s0_SAP_f010_d2,unlearned,SAP,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,107
+3,confirmatory,s3_SAP_f025_d1,unlearned,SAP,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,108
+5,confirmatory,s5_SAP_f010_d5,unlearned,SAP,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,109
+6,confirmatory,s6_SSD_f050_d2,unlearned,SSD,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,110
+5,confirmatory,s5_SAP_f050_d1,unlearned,SAP,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,111
+1,confirmatory,s1_SSD_f050_d2,unlearned,SSD,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,112
+1,confirmatory,s1_SSD_f010_d1,unlearned,SSD,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,113
+1,confirmatory,s1_SAP_f100_d1,unlearned,SAP,1.0,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,114
+4,confirmatory,s4_SSD_f050_d4,unlearned,SSD,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,115
+2,confirmatory,s2_SAP_f025_d1,unlearned,SAP,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,116
+2,confirmatory,s2_SSD_f050_d4,unlearned,SSD,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,117
+5,confirmatory,s5_SSD_f010_d1,unlearned,SSD,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,118
+2,confirmatory,s2_SAP_f100_d1,unlearned,SAP,1.0,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,119
+0,dev,s0_SAP_f050_d3,unlearned,SAP,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,120
+6,confirmatory,s6_SSD_f050_d3,unlearned,SSD,0.5,s6_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,121
+0,dev,s0_SAP_f025_d4,unlearned,SAP,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,122
+5,confirmatory,s5_SSD_f050_d1,unlearned,SSD,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,123
+5,confirmatory,s5_SSD_f050_d3,unlearned,SSD,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,124
+0,dev,s0_SSD_f025_d3,unlearned,SSD,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,125
+2,confirmatory,s2_SAP_f010_d1,unlearned,SAP,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,126
+4,confirmatory,s4_SSD_f100_d1,unlearned,SSD,1.0,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,127
+2,confirmatory,s2_SAP_f025_d2,unlearned,SAP,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,128
+2,confirmatory,s2_SAP_f010_d3,unlearned,SAP,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,129
+2,confirmatory,s2_SAP_f010_d2,unlearned,SAP,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,130
+4,confirmatory,s4_SAP_f100_d1,unlearned,SAP,1.0,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,131
+4,confirmatory,s4_SAP_f010_d2,unlearned,SAP,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,132
+3,confirmatory,s3_SSD_f050_d3,unlearned,SSD,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,133
+5,confirmatory,s5_SSD_f025_d2,unlearned,SSD,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,134
+4,confirmatory,s4_SAP_f010_d5,unlearned,SAP,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,135
+4,confirmatory,s4_SSD_f010_d3,unlearned,SSD,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,136
+1,confirmatory,s1_SAP_f050_d5,unlearned,SAP,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,137
+6,confirmatory,s6_SSD_f010_d2,unlearned,SSD,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,138
+4,confirmatory,s4_SAP_f010_d3,unlearned,SAP,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,139
+1,confirmatory,s1_SAP_f010_d5,unlearned,SAP,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,140
+5,confirmatory,s5_SSD_f050_d5,unlearned,SSD,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,141
+0,dev,s0_SAP_f010_d5,unlearned,SAP,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,142
+0,dev,s0_SSD_f010_d5,unlearned,SSD,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,143
+6,confirmatory,s6_SAP_f100_d1,unlearned,SAP,1.0,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,144
+5,confirmatory,s5_SAP_f025_d1,unlearned,SAP,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,145
+6,confirmatory,s6_SSD_f010_d1,unlearned,SSD,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,146
+4,confirmatory,s4_SSD_f025_d3,unlearned,SSD,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,147
+0,dev,s0_SAP_f025_d5,unlearned,SAP,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,148
+2,confirmatory,s2_SSD_f010_d1,unlearned,SSD,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,149
+4,confirmatory,s4_SSD_f010_d2,unlearned,SSD,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,150
+4,confirmatory,s4_SSD_f025_d2,unlearned,SSD,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,151
+4,confirmatory,s4_SAP_f025_d1,unlearned,SAP,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,152
+3,confirmatory,s3_SAP_f100_d1,unlearned,SAP,1.0,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,153
+1,confirmatory,s1_SSD_f025_d4,unlearned,SSD,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,154
+0,dev,s0_SAP_f010_d3,unlearned,SAP,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,155
+3,confirmatory,s3_SAP_f010_d3,unlearned,SAP,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,156
+5,confirmatory,s5_SAP_f010_d2,unlearned,SAP,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,157
+4,confirmatory,s4_SSD_f010_d4,unlearned,SSD,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,158
+3,confirmatory,s3_SSD_f050_d4,unlearned,SSD,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,159
+6,confirmatory,s6_SSD_f025_d1,unlearned,SSD,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,160
+0,dev,s0_SAP_f050_d2,unlearned,SAP,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,161
+6,confirmatory,s6_SAP_f025_d3,unlearned,SAP,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,162
+1,confirmatory,s1_SSD_f010_d4,unlearned,SSD,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,163
+3,confirmatory,s3_SAP_f050_d2,unlearned,SAP,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,164
+3,confirmatory,s3_SAP_f050_d1,unlearned,SAP,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,165
+0,dev,s0_SSD_f050_d5,unlearned,SSD,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,166
+2,confirmatory,s2_SSD_f025_d5,unlearned,SSD,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,167
+3,confirmatory,s3_SSD_f025_d5,unlearned,SSD,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,168
+3,confirmatory,s3_SAP_f050_d4,unlearned,SAP,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,169
+3,confirmatory,s3_SAP_f010_d5,unlearned,SAP,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,170
+0,dev,s0_SSD_f050_d4,unlearned,SSD,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,171
+5,confirmatory,s5_SSD_f050_d4,unlearned,SSD,0.5,s5_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,172
+2,confirmatory,s2_SSD_f050_d2,unlearned,SSD,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,173
+5,confirmatory,s5_SSD_f025_d1,unlearned,SSD,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,174
+4,confirmatory,s4_SAP_f025_d4,unlearned,SAP,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,175
+3,confirmatory,s3_SSD_f025_d3,unlearned,SSD,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,176
+1,confirmatory,s1_SAP_f025_d3,unlearned,SAP,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,177
+0,dev,s0_SSD_f025_d5,unlearned,SSD,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,178
+3,confirmatory,s3_SSD_f010_d4,unlearned,SSD,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,179
+3,confirmatory,s3_SAP_f010_d2,unlearned,SAP,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,180
+0,dev,s0_SAP_f050_d4,unlearned,SAP,0.5,s0_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,181
+2,confirmatory,s2_SSD_f010_d4,unlearned,SSD,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,182
+3,confirmatory,s3_SSD_f025_d2,unlearned,SSD,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,183
+1,confirmatory,s1_SAP_f050_d1,unlearned,SAP,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,184
+3,confirmatory,s3_SSD_f050_d2,unlearned,SSD,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,185
+6,confirmatory,s6_SAP_f025_d5,unlearned,SAP,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,186
+0,dev,s0_SSD_f025_d2,unlearned,SSD,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,187
+6,confirmatory,s6_SSD_f100_d1,unlearned,SSD,1.0,s6_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,188
+3,confirmatory,s3_SAP_f025_d3,unlearned,SAP,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,189
+2,confirmatory,s2_SAP_f050_d2,unlearned,SAP,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,190
+0,dev,s0_SSD_f025_d4,unlearned,SSD,0.25,s0_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,191
+1,confirmatory,s1_SSD_f050_d3,unlearned,SSD,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,192
+3,confirmatory,s3_SAP_f050_d5,unlearned,SAP,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,193
+0,dev,s0_SSD_f100_d1,unlearned,SSD,1.0,s0_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,194
+4,confirmatory,s4_SAP_f050_d3,unlearned,SAP,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,195
+6,confirmatory,s6_SSD_f010_d4,unlearned,SSD,0.1,s6_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,196
+2,confirmatory,s2_SSD_f010_d3,unlearned,SSD,0.1,s2_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,197
+1,confirmatory,s1_SAP_f010_d3,unlearned,SAP,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,198
+1,confirmatory,s1_SSD_f025_d3,unlearned,SSD,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,199
+5,confirmatory,s5_SAP_f025_d3,unlearned,SAP,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,200
+2,confirmatory,s2_SAP_f050_d1,unlearned,SAP,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,201
+3,confirmatory,s3_SSD_f050_d1,unlearned,SSD,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,202
+4,confirmatory,s4_SAP_f050_d5,unlearned,SAP,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,203
+4,confirmatory,s4_SAP_f050_d4,unlearned,SAP,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,204
+1,confirmatory,s1_SSD_f010_d3,unlearned,SSD,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,205
+4,confirmatory,s4_SSD_f050_d1,unlearned,SSD,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,206
+1,confirmatory,s1_SAP_f050_d2,unlearned,SAP,0.5,s1_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,207
+4,confirmatory,s4_SAP_f050_d2,unlearned,SAP,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,208
+1,confirmatory,s1_SAP_f010_d2,unlearned,SAP,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,209
+6,confirmatory,s6_SSD_f025_d5,unlearned,SSD,0.25,s6_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,210
+3,confirmatory,s3_SSD_f025_d4,unlearned,SSD,0.25,s3_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,211
+4,confirmatory,s4_SSD_f025_d1,unlearned,SSD,0.25,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,212
+0,dev,s0_SAP_f010_d4,unlearned,SAP,0.1,s0_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,213
+5,confirmatory,s5_SAP_f025_d2,unlearned,SAP,0.25,s5_corrupt,False,corrupted model + flagged subset + trusted set,2.0,2,214
+2,confirmatory,s2_SAP_f050_d3,unlearned,SAP,0.5,s2_corrupt,False,corrupted model + flagged subset + trusted set,3.0,2,215
+1,confirmatory,s1_SAP_f025_d1,unlearned,SAP,0.25,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,216
+1,confirmatory,s1_SAP_f010_d1,unlearned,SAP,0.1,s1_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,217
+5,confirmatory,s5_SSD_f010_d5,unlearned,SSD,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,218
+3,confirmatory,s3_SSD_f050_d5,unlearned,SSD,0.5,s3_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,219
+5,confirmatory,s5_SSD_f010_d4,unlearned,SSD,0.1,s5_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,220
+3,confirmatory,s3_SSD_f010_d1,unlearned,SSD,0.1,s3_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,221
+4,confirmatory,s4_SSD_f050_d5,unlearned,SSD,0.5,s4_corrupt,False,corrupted model + flagged subset + trusted set,5.0,2,222
+2,confirmatory,s2_SAP_f025_d4,unlearned,SAP,0.25,s2_corrupt,False,corrupted model + flagged subset + trusted set,4.0,2,223
+4,confirmatory,s4_SSD_f010_d1,unlearned,SSD,0.1,s4_corrupt,False,corrupted model + flagged subset + trusted set,1.0,2,224

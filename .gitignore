@@ -1,0 +1,10 @@
+# environments and caches
+.venv*/
+__pycache__/
+.pytest_cache/
+
+# Kvasir-SEG is not redistributed here; download it per data/README.md
+data/raw/
+
+# derived from the dataset; regenerate with src/dedup.py (commit splits.csv once frozen)
+data/groups/
