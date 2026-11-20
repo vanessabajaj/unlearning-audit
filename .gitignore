@@ -8,3 +8,4 @@ data/raw/
 
 # derived from the dataset; regenerate with src/dedup.py (commit splits.csv once frozen)
 data/groups/
+pilot/cache/
